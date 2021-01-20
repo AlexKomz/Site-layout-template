@@ -3,35 +3,35 @@
 ## Features
 
 + Ready data structure for work
-│   <br/>\t.editorconfig
-│   <br/>\t.gitattributes<br/>
-│   .gitignore<br/>
-│   .stylelintignore<br/>
-│   .stylelintrc.json<br/>
-│   .travis.yml<br/>
-│   gulpfile.js<br/>
-│   package-lock.json<br/>
-│   package.json<br/>
-│   README.md<br/>
-│
-└───source<br/>
-    │   index.html<br/>
+│   <br/>.editorconfig
+│   <br/>.gitattributes
+│   <br/>.gitignore
+│   <br/>.stylelintignore
+│   <br/>.stylelintrc.json
+│   <br/>.travis.yml
+│   <br/>gulpfile.js
+│   <br/>package-lock.json
+│   <br/>package.json
+│   <br/>README.md
+│<br/>
+└───source
+    │   <br/>index.html
     │<br/>
-    ├───fonts<br/>
-    ├───img<br/>
-    │   └───icons<br/>
-    ├───js<br/>
-    │       script.js<br/>
-    │<br/>
-    └───sass<br/>
-        │   style.scss<br/>
-        │   _fonts.scss<br/>
-        │   _global.scss<br/>
-        │   _mixins.scss<br/>
-        │   _normalise.scss<br/>
-        │   _variables.scss<br/>
+    ├───<br/>fonts
+    ├───<br/>img<
+    │   <br/>└───icons
+    ├───<br/>js
+    │       <br/>script.js
+    │
+    └───sass
+        │   <br/>style.scss
+        │   <br/>_fonts.scss
+        │   <br/>_global.scss
+        │   <br/>_mixins.scss
+        │   <br/>_normalise.scss
+        │   <br/>_variables.scss
         │<br/>
-        └───blocks<br/>
+        └───blocks
 
 + Customized task manager 
 <br/>SASS (SCSS) support
