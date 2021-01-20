@@ -3,8 +3,8 @@
 ## Features
 
 + Ready data structure for work
-│   .editorconfig<br/>
-│   .gitattributes<br/>
+│   <br/>\t.editorconfig
+│   <br/>\t.gitattributes<br/>
 │   .gitignore<br/>
 │   .stylelintignore<br/>
 │   .stylelintrc.json<br/>
@@ -13,7 +13,7 @@
 │   package-lock.json<br/>
 │   package.json<br/>
 │   README.md<br/>
-│<br/>
+│
 └───source<br/>
     │   index.html<br/>
     │<br/>
@@ -33,11 +33,11 @@
         │<br/>
         └───blocks<br/>
 
-+ Customized task manager
-SASS (SCSS) support
-Optimizing images
-Building the sprite file
-Track file changes and sync with the browser
++ Customized task manager 
+<br/>SASS (SCSS) support
+<br/>Optimizing images
+<br/>Building the sprite file
+<br/>Track file changes and sync with the browser
 
 ## Usage
 
