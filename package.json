@@ -16,6 +16,7 @@
     "gulp-svgstore": "7.0.x",
     "gulp-uglify": "3.0.x",
     "gulp-webp": "4.0.x",
+    "normalize-scss": "7.0.x",
     "postcss": "8.2.x",
     "postcss-csso": "5.0.x",
     "stylelint": "13.8.x",
