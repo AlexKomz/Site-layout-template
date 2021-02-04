@@ -6,6 +6,7 @@
 
 + Customized task manager 
 <br/>SASS (SCSS) support
+<br/>Nunjucks tamplating support
 <br/>Optimizing images
 <br/>Building the sprite file
 <br/>Track file changes and sync with the browser

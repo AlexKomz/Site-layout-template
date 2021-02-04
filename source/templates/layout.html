@@ -1,0 +1,29 @@
+{% from "html/header.nj" import header %}
+{% from "html/footer.nj" import footer %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title> {{ title }} </title>
+</head>
+
+<body>
+  <div style="display: none;">
+    {% include "img/sprite.svg" %}
+  </div>
+
+  {{ header() }}
+
+  {% block content %}
+  {% endblock %}
+
+  {{ footer() }}
+
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>

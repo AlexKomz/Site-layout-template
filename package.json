@@ -8,6 +8,7 @@
     "gulp": "4.0.x",
     "gulp-htmlmin": "5.0.x",
     "gulp-imagemin": "7.1.x",
+    "gulp-nunjucks-html": "2.0.x",
     "gulp-plumber": "1.2.x",
     "gulp-postcss": "9.0.x",
     "gulp-rename": "2.0.x",
@@ -23,7 +24,7 @@
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
-    "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
+    "stylelint": "stylelint \"source/scss/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
     "sprite": "gulp sprite",
     "optimization": "gulp optimization",
