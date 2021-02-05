@@ -36,7 +36,9 @@ const styles = () => {
     .pipe(sourcemap.init())
     .pipe(sass())
     .pipe(postcss([
-      autoprefixer(),
+      autoprefixer({
+        grid: true
+      }),
       csso()
     ]))
     .pipe(rename(`style.min.css`))
