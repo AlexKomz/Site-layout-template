@@ -12,6 +12,9 @@ const uglify = require(`gulp-uglify`);
 const imagemin = require(`gulp-imagemin`);
 const webp = require(`gulp-webp`);
 const svgstore = require(`gulp-svgstore`);
+const ttf2woff = require(`gulp-ttf2woff`);
+const ttf2woff2 = require(`gulp-ttf2woff2`);
+const fonter = require(`gulp-fonter`);
 const del = require(`del`);
 const sync = require(`browser-sync`).create();
 
@@ -96,6 +99,36 @@ const sprite = () => {
 exports.sprite = sprite;
 
 
+// Ttf
+const ttf = () => {
+  return gulp.src(`source/fonts/**/*.otf`)
+    .pipe(fonter({
+      format: [`ttf`]
+    }))
+    .pipe(gulp.dest(`source/fonts/`));
+};
+
+exports.ttf = ttf;
+
+
+// Woff
+const woff = () => {
+  return gulp.src(`source/fonts/**/*.ttf`)
+    .pipe(ttf2woff())
+    .pipe(gulp.dest(`source/fonts/`));
+};
+
+exports.woff = woff;
+
+
+// Woff2
+const woff2 = () => {
+  return gulp.src(`source/fonts/**/*.ttf`)
+    .pipe(ttf2woff2())
+    .pipe(gulp.dest(`source/fonts/`));
+};
+
+
 // Copy
 const copy = () => {
   return gulp.src([
@@ -138,7 +171,7 @@ exports.server = server;
 const watcher = () => {
   gulp.watch(`source/sass/**/*.scss`, gulp.series(styles));
   gulp.watch(`source/js/script.js`, gulp.series(scripts));
-  gulp.watch(`source/**/*.html`, gulp.series(html));
+  gulp.watch(`source/**/*.+(html|njk)`, gulp.series(html));
 };
 
 
@@ -149,6 +182,17 @@ const optimization = gulp.series(
 );
 
 exports.optimization = optimization;
+
+// Fonts
+const fonts = gulp.series(
+  ttf,
+  gulp.parallel(
+    woff,
+    woff2
+  )
+);
+
+exports.fonts = fonts;
 
 
 // Build
